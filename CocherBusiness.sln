@@ -5,7 +5,12 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{0F280AB9-4DC1-4462-9346-E9B11F078E79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monbsoft.Services.Product.Api", "src\Services\Monbsoft.Services.Product.Api\Monbsoft.Services.Product.Api.csproj", "{4F14C936-C88E-4024-924A-CC3F6A901E1B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Monbsoft.Services.Product.Api", "src\Services\Monbsoft.Services.Product.Api\Monbsoft.Services.Product.Api.csproj", "{4F14C936-C88E-4024-924A-CC3F6A901E1B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DFD9D823-B206-41B4-B97A-CA0006A73436}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
