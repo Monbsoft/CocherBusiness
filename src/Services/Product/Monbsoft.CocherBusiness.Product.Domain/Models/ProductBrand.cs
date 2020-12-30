@@ -1,11 +1,7 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace Monbsoft.Services.Product.Api.Models
+namespace Monbsoft.CocherBusiness.Product.Domain
 {
     public class ProductBrand
     {

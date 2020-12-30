@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option csharp_namespace = "Monbsoft.Services.Product.Api";
+
+package product;
+
+service Product {
+	rpc GetProductById(ProductRequest) returns (ProductResponse);
+}
+
+message ProductRequest {
+	string id = 1;
+}
+
+message ProductResponse {
+	string id = 1;
+	string name = 2;
+	string description = 3;
+	double price = 4;
+}
+

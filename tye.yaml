@@ -1,0 +1,20 @@
+# tye application configuration file
+# read all about it at https://github.com/dotnet/tye
+#
+# when you've given us a try, we'd love to know what you think:
+#    https://aka.ms/AA7q20u
+#
+name: cocherbusiness
+services:
+  - name: product-api
+    project: src/Services/Monbsoft.Services.Product.Api/Monbsoft.Services.Product.Api.csproj
+  - name: cocher-data
+    image: mongo
+    env:
+      - name: ME_CONFIG_MONGODB_ADMINUSERNAME
+        value: root
+      - name: ME_CONFIG_MONGODB_ADMINPASSWORD
+        value: example
+    bindings:
+      - port: 27017
+        connectionString: "mongodb://${host}:${port}"
