@@ -4,6 +4,10 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Monbsoft.CocherBusiness.Product.Domain.Interfaces;
+using Monbsoft.CocherBusiness.Product.Infrastructure.Configuration;
+using Monbsoft.CocherBusiness.Product.Infrastructure.Data;
+using Monbsoft.Services.Product.Api.Infrastructure.Data.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,6 +30,8 @@ namespace Monbsoft.Services.Product.Api
         {
             services.AddGrpc();
             services.Configure<ProductSettings>(Configuration);
+            services.AddSingleton<ProductDataContext>();
+            services.AddSingleton<IProductRepository, ProductRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

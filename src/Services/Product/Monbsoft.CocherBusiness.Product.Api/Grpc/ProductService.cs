@@ -1,7 +1,6 @@
 ﻿using Grpc.Core;
 using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
-using Monbsoft.CocherBusiness.Product.Infrastructure.Data;
+using Monbsoft.CocherBusiness.Product.Domain.Interfaces;
 using System.Threading.Tasks;
 using static Monbsoft.Services.Product.Api.Product;
 
@@ -9,12 +8,12 @@ namespace Monbsoft.Services.Product.Api.Grpc
 {
     public class ProductService : ProductBase
     {
-        private readonly ProductDataContext _productContext;
+        private readonly IProductRepository _productRepository;
         private readonly ILogger _logger;
 
-        public ProductService(ProductDataContext context, IOptions<ProductSettings> settings, ILogger<ProductService> logger)
+        public ProductService(IProductRepository productRepository, ILogger<ProductService> logger)
         {
-            _productContext = context;
+            _productRepository = productRepository;
             _logger = logger;
         }
 
