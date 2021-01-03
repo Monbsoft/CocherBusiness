@@ -7,16 +7,16 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0-buster-slim AS build
 WORKDIR /src
-COPY ["src/Services/Monbsoft.Services.Product.Api/Monbsoft.Services.Product.Api.csproj", "src/Services/Monbsoft.Services.Product.Api/"]
-RUN dotnet restore "src/Services/Monbsoft.Services.Product.Api/Monbsoft.Services.Product.Api.csproj"
+COPY ["src/Services/Product/Monbsoft.CocherBusiness.Product.Api/Monbsoft.CocherBusiness.Product.Api.csproj", "src/Services/Product/Monbsoft.CocherBusiness.Product.Api/"]
+RUN dotnet restore "src/Services/Product/Monbsoft.CocherBusiness.Product.Api/Monbsoft.CocherBusiness.Product.Api.csproj"
 COPY . .
-WORKDIR "/src/src/Services/Monbsoft.Services.Product.Api"
-RUN dotnet build "Monbsoft.Services.Product.Api.csproj" -c Release -o /app/build
+WORKDIR "/src/src/Services/Product/Monbsoft.CocherBusiness.Product.Api"
+RUN dotnet build "Monbsoft.CocherBusiness.Product.Api.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "Monbsoft.Services.Product.Api.csproj" -c Release -o /app/publish
+RUN dotnet publish "Monbsoft.CocherBusiness.Product.Api.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "Monbsoft.Services.Product.Api.dll"]
+ENTRYPOINT ["dotnet", "Monbsoft.CocherBusiness.Product.Api.dll"]

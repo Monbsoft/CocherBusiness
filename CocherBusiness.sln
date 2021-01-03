@@ -14,9 +14,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Product", "Product", "{2848
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Monbsoft.CocherBusiness.Product.Api", "src\Services\Product\Monbsoft.CocherBusiness.Product.Api\Monbsoft.CocherBusiness.Product.Api.csproj", "{46B6AFBA-85DF-41E5-AFF1-4879C64A53BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monbsoft.CocherBusiness.Product.Domain", "src\Services\Product\Monbsoft.CocherBusiness.Product.Domain\Monbsoft.CocherBusiness.Product.Domain.csproj", "{0D9AA6EA-7CEB-4444-9B0A-A5912A5B61F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Monbsoft.CocherBusiness.Product.Domain", "src\Services\Product\Monbsoft.CocherBusiness.Product.Domain\Monbsoft.CocherBusiness.Product.Domain.csproj", "{0D9AA6EA-7CEB-4444-9B0A-A5912A5B61F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monbsoft.CocherBusiness.Product.Infrastructure", "src\Services\Product\Monbsoft.CocherBusiness.Product.Infrastructure\Monbsoft.CocherBusiness.Product.Infrastructure.csproj", "{A3F4336D-8CAB-44BB-BA30-1F9603ECD49E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Monbsoft.CocherBusiness.Product.Infrastructure", "src\Services\Product\Monbsoft.CocherBusiness.Product.Infrastructure\Monbsoft.CocherBusiness.Product.Infrastructure.csproj", "{A3F4336D-8CAB-44BB-BA30-1F9603ECD49E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{257766C8-0F0D-4537-A867-DB8A4F6D4ADA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monbsoft.CocherBusiness.Product.FunctionalTests", "test\Monbsoft.CocherBusiness.Product.FunctionalTests\Monbsoft.CocherBusiness.Product.FunctionalTests.csproj", "{C1E024E0-2B6D-446F-A750-43EFD2FA37C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,6 +40,10 @@ Global
 		{A3F4336D-8CAB-44BB-BA30-1F9603ECD49E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3F4336D-8CAB-44BB-BA30-1F9603ECD49E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3F4336D-8CAB-44BB-BA30-1F9603ECD49E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1E024E0-2B6D-446F-A750-43EFD2FA37C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1E024E0-2B6D-446F-A750-43EFD2FA37C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1E024E0-2B6D-446F-A750-43EFD2FA37C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1E024E0-2B6D-446F-A750-43EFD2FA37C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -45,6 +53,7 @@ Global
 		{46B6AFBA-85DF-41E5-AFF1-4879C64A53BA} = {284850DA-855F-419D-ADA8-181C7FB3C16A}
 		{0D9AA6EA-7CEB-4444-9B0A-A5912A5B61F5} = {284850DA-855F-419D-ADA8-181C7FB3C16A}
 		{A3F4336D-8CAB-44BB-BA30-1F9603ECD49E} = {284850DA-855F-419D-ADA8-181C7FB3C16A}
+		{C1E024E0-2B6D-446F-A750-43EFD2FA37C3} = {257766C8-0F0D-4537-A867-DB8A4F6D4ADA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DBCA898E-33CA-4364-94B8-54A369FDD475}

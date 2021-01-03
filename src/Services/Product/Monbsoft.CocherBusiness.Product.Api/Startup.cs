@@ -7,6 +7,7 @@ using Microsoft.Extensions.Hosting;
 using Monbsoft.CocherBusiness.Product.Domain.Interfaces;
 using Monbsoft.CocherBusiness.Product.Infrastructure.Configuration;
 using Monbsoft.CocherBusiness.Product.Infrastructure.Data;
+using Monbsoft.Services.Product.Api.Grpc;
 using Monbsoft.Services.Product.Api.Infrastructure.Data.Repositories;
 using System;
 using System.Collections.Generic;
@@ -46,7 +47,7 @@ namespace Monbsoft.Services.Product.Api
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapGrpcService<GreeterService>();
+                endpoints.MapGrpcService<ProductService>();
 
                 endpoints.MapGet("/", async context =>
                 {

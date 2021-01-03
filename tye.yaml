@@ -7,14 +7,9 @@
 name: cocherbusiness
 services:
   - name: product-api
-    project: src/Services/Monbsoft.Services.Product.Api/Monbsoft.Services.Product.Api.csproj
+    project: src/Services/Product/Monbsoft.CocherBusiness.Product.Api/Monbsoft.CocherBusiness.Product.Api.csproj
   - name: cocher-data
     image: mongo
-    env:
-      - name: ME_CONFIG_MONGODB_ADMINUSERNAME
-        value: root
-      - name: ME_CONFIG_MONGODB_ADMINPASSWORD
-        value: example
     bindings:
       - port: 27017
         connectionString: "mongodb://${host}:${port}"
