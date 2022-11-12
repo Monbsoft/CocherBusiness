@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Monbsoft.CocherBusiness.SharedKernel;
-
-public abstract class EntityBase
+namespace Monbsoft.CocherBusiness.Infrastructure.Data
 {
-    public Guid Id { get; set; }
+    internal class ProjectContext
+    {
+    }
 }
