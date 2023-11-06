@@ -5,13 +5,13 @@ VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A95E9106-2C39-4897-9487-9B0A2CDE5B04}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CocherBusiness.SharedKernel", "src\CocherBusiness.SharedKernel\CocherBusiness.SharedKernel.csproj", "{1CB94AB4-4C94-40BD-B020-AC200CE4A270}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CocherBusiness.SharedKernel", "src\CocherBusiness.SharedKernel\CocherBusiness.SharedKernel.csproj", "{1CB94AB4-4C94-40BD-B020-AC200CE4A270}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CocherBusiness.Application", "src\CocherBusiness.Application\CocherBusiness.Application.csproj", "{AED4F296-9B01-4B74-9DCF-B2C11632716B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CocherBusiness.Application", "src\CocherBusiness.Application\CocherBusiness.Application.csproj", "{AED4F296-9B01-4B74-9DCF-B2C11632716B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CocherBusiness.Infrastructure", "src\CocherBusiness.Infrastructure\CocherBusiness.Infrastructure.csproj", "{8E67AC14-55F9-45D9-9C6E-BBD9BC9EA62D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CocherBusiness.Infrastructure", "src\CocherBusiness.Infrastructure\CocherBusiness.Infrastructure.csproj", "{8E67AC14-55F9-45D9-9C6E-BBD9BC9EA62D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CocherBusiness.Web", "src\CocherBusiness.Web\CocherBusiness.Web.csproj", "{215C7A61-AF84-43BA-BA3D-AF5F537B81AF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CocherBusiness.Web", "src\CocherBusiness.Web\CocherBusiness.Web.csproj", "{BE7A0B3A-9D7E-4F33-A27B-5132BF495F0D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,10 +31,10 @@ Global
 		{8E67AC14-55F9-45D9-9C6E-BBD9BC9EA62D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E67AC14-55F9-45D9-9C6E-BBD9BC9EA62D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E67AC14-55F9-45D9-9C6E-BBD9BC9EA62D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{215C7A61-AF84-43BA-BA3D-AF5F537B81AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{215C7A61-AF84-43BA-BA3D-AF5F537B81AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{215C7A61-AF84-43BA-BA3D-AF5F537B81AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{215C7A61-AF84-43BA-BA3D-AF5F537B81AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE7A0B3A-9D7E-4F33-A27B-5132BF495F0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE7A0B3A-9D7E-4F33-A27B-5132BF495F0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE7A0B3A-9D7E-4F33-A27B-5132BF495F0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE7A0B3A-9D7E-4F33-A27B-5132BF495F0D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,7 +43,7 @@ Global
 		{1CB94AB4-4C94-40BD-B020-AC200CE4A270} = {A95E9106-2C39-4897-9487-9B0A2CDE5B04}
 		{AED4F296-9B01-4B74-9DCF-B2C11632716B} = {A95E9106-2C39-4897-9487-9B0A2CDE5B04}
 		{8E67AC14-55F9-45D9-9C6E-BBD9BC9EA62D} = {A95E9106-2C39-4897-9487-9B0A2CDE5B04}
-		{215C7A61-AF84-43BA-BA3D-AF5F537B81AF} = {A95E9106-2C39-4897-9487-9B0A2CDE5B04}
+		{BE7A0B3A-9D7E-4F33-A27B-5132BF495F0D} = {A95E9106-2C39-4897-9487-9B0A2CDE5B04}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DBCA898E-33CA-4364-94B8-54A369FDD475}

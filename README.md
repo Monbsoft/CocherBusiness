@@ -1,6 +1,29 @@
 # CocherBusiness
 Cocher Business is an open-source .NET enterprise management system based on microservices architecture. It is heavily inspired by the [.NET Microservices: Architecture for Containerized .NET Applications](https://docs.microsoft.com/en-us/dotnet/architecture/microservices/) book, as well as its companion reference application [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers).
 
+
+
+## Configuring the sample to use SQL Server
+
+* Install the EF tool: 
+
+    ```
+    dotnet tool install --global dotnet-ef
+    ```
+
+* Migrate the database:
+
+
+    ```
+    dotnet ef migrations add InitialCreate --context cocherdbcontext -p ../CocherBusiness.Infrastructure/CocherBusiness.Infrastructure.csproj -s CocherBusiness.Web.csproj -o Data/Migrations
+    ```    
+
+* Update SQL Server database:
+
+    ```
+    dotnet ef database update -c cocherdbcontext -p ../CocherBusiness.Infrastructure/CocherBusiness.Infrastructure.csproj -s  CocherBusiness.Web.csproj
+    ```
+
 ## Credit
 
 - [[.NET Microservices: Architecture for Containerized .NET Applications](https://docs.microsoft.com/en-us/dotnet/architecture/microservices/)],
